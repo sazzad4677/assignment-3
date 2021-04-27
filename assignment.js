@@ -1,7 +1,9 @@
+// github link: https://github.com/sazzad4677/assignment-3
+
 // 1. Convert Kilometer to Meter
 function kilometerToMeter(kilometer) {
     if (kilometer < 0) {
-      return 'Please Enter more then Zero';
+      return 'Please Enter positive value';
     }
     // 1 km = 1000 m
     return kilometer * 1000;
@@ -13,7 +15,7 @@ function kilometerToMeter(kilometer) {
   // 2. Budget Calculator
   function budgetCalculator(watch, phone, laptop) {
     if (watch < 0 || phone < 0 || laptop < 0) {
-      return 'Please Enter more then Zero';
+      return 'Please Enter positive value';
     }
     // watch price = $50
     const totalWatch = watch * 50;
@@ -33,7 +35,7 @@ function kilometerToMeter(kilometer) {
     let money = 0;
   
     if (day < 0) {
-      return 'Please Enter more then Zero';
+      return 'Please Enter positive value';
     } else if (day <= 10) {
       // 1st: 1day - 10day => 1day = 100
       money = day * 100;
@@ -47,7 +49,7 @@ function kilometerToMeter(kilometer) {
       const firstPart = 10 * 100;
       const secondPart = 10 * 80;
       const remaining = day - 20;
-      // 3rd: 21day - 21+..day => 1day = 50
+      // 3rd: 21day - 21 + day => 1day = 50
       const thirdPart = remaining * 50;
       money = firstPart + secondPart + thirdPart;
     }
@@ -70,4 +72,4 @@ function kilometerToMeter(kilometer) {
     return longName;
   }
   
-  console.log(megaFriend(['Rakib', 'Tanjil', 'Shahed', 'Masum', 'Rohan', 'Robin']));
+  console.log(megaFriend(['Roksana', 'Erin', 'Shahed', 'Masum', 'Rohan', 'Rahim']));
